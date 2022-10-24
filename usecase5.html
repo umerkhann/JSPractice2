@@ -13,8 +13,9 @@
     <script>
         function findVowels(string) {
             let count = 0;
+            let string1 = string.toLowerCase();
             for (let i = 0; i < string.length; i++) {
-                if (string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u')
+                if (string1[i] == 'a' || string1[i] == 'e' || string1[i] == 'i' || string1[i] == 'o' || string1[i] == 'u')
                     count++;
                 // switch (string[i]) {
                 //     case 'a':
@@ -32,6 +33,9 @@
                 //     case 'u':
                 //         count++;
                 //         break;
+                //      default:
+                //      count = 0;
+                //      break;
                 // }
             }
             return count;

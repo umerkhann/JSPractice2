@@ -20,17 +20,12 @@
             string = string.charAt(0).toUpperCase() + string.slice(1);
             for(let i = 1; i < string.length; i++){
                     if(string[i - 1] === ' ')
-                    //string = string.charAt(i).toUpperCase() + string.slice(i+1)
                     string = string.slice(0, i) + string.charAt(i).toUpperCase() + string.slice(i + 1);
             }
             return string;
         }
 
         let string = "the quick brown fox"
-        // string = string.slice(0, 0) + string.charAt(0).toUpperCase() + string.slice(1);
-        // string = string.slice(0, 4) + string.charAt(4).toUpperCase() + string.slice(5);
-        // string = string.slice(0, 10) + string.charAt(10).toUpperCase() + string.slice(11);
-        // string = string.slice(0, 16) + string.charAt(16).toUpperCase() + string.slice(17);
         document.getElementById("demo").innerHTML = makeUpperCase(string);
 
     </script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<title>Usecase 5</title>
+<html>
+
+<body>
+
+    <h2>Return the number of vowels in a string</h2>
+
+    <p>The number of vowel word(s) is/are:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function findVowels(string) {
+            let count = 0;
+            for (let i = 0; i < string.length; i++) {
+                if (string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u')
+                    count++;
+                // switch (string[i]) {
+                //     case 'a':
+                //         count++;
+                //         break;
+                //     case 'e':
+                //         count++;
+                //         break;
+                //     case 'i':
+                //         count++;
+                //         break;
+                //     case 'o':
+                //         count++;
+                //         break;
+                //     case 'u':
+                //         count++;
+                //         break;
+                // }
+            }
+            return count;
+        }
+
+
+        var inputString = prompt("Please type a string/word and then press OK to find the number of vowels");
+        document.getElementById("demo").innerHTML = findVowels(inputString);
+    </script>
+    </script>
+
+</body>
+
+</html>

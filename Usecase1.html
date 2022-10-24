@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Find the largest number from an array</h2>
+
+    <p>The largest number is:</p>
+
+    <p id="demo"></p>
+    <script>
+
+        function findLargerst(arr){
+            let largestNumber = 0;
+            for(let i = 0; i < arr.length; i ++){
+                for(let j = i + 1; j < arr.length; j++){
+                    if( arr[i] > arr[j])
+                    largestNumber = arr[i];
+                }
+            }
+            return largestNumber;
+        }
+
+        var arr = [1,2,3,4,9,5,20,21,20];
+        document.getElementById("demo").innerHTML = findLargerst(arr);
+        // function findLargerst(arr) {
+        //     let count = 0;
+        //     let count2 = 0;
+        //     let string = "";
+        //     for (let i = 0; i < arr.length; i++) {
+        //         for (let j = i + 1; j < i; j++) {
+        //             if (arr[i] === arr[j])
+        //                 count++;
+        //         }
+        //         if (count > count2) {
+        //             string = arr[i];
+        //             count2 = count;
+        //         }
+        //     }
+        //     return string;
+        // }
+
+    </script>
+
+</body>
+
+</html>
